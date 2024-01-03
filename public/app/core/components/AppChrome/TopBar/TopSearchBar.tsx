@@ -62,7 +62,7 @@ export const TopSearchBar = React.memo(function TopSearchBar() {
 
 const getStyles = (theme: GrafanaTheme2) => ({
   layout: css({
-    height: TOP_BAR_LEVEL_HEIGHT,
+    height: TOP_BAR_LEVEL_HEIGHT * 2,
     display: 'flex',
     gap: theme.spacing(1),
     alignItems: 'center',
@@ -78,7 +78,8 @@ const getStyles = (theme: GrafanaTheme2) => ({
     },
   }),
   img: css({
-    height: '32px',
+    height: theme.spacing(10),
+    width: theme.spacing(10),
   }),
   logo: css({
     display: 'flex',
